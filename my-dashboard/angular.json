@@ -3,19 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lifecycle": {
+    "my-dashboard": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/lifecycle",
+            "outputPath": "dist/my-dashboard",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lifecycle:build:production"
+              "buildTarget": "my-dashboard:build:production"
             },
             "development": {
-              "buildTarget": "lifecycle:build:development"
+              "buildTarget": "my-dashboard:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,6 +94,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "8af1cf62-0f0e-4e4a-b258-733a990231dc"
   }
 }
